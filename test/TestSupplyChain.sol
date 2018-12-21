@@ -6,58 +6,58 @@ import "../contracts/SupplyChain.sol";
 
 contract TestSupplyChain {
 
-    SupplyChain sc = new SupplyChain();
-    bool result;
-    // Test for failing conditions in this contracts
-    // test that every modifier is working
-    function testVerifyCaller() 
-    public 
-    returns (bool)   {
-        result = address(sc).call(abi.encodeWithSignature("verifyCaller(address)"));
-        Assert.isFalse(result, "verifyCaller() should throw an exception...");
-    }
+    // SupplyChain sc = new SupplyChain();
+    // bool result;
+    // // Test for failing conditions in this contracts
+    // // test that every modifier is working
+    // function testVerifyCaller() 
+    // public 
+    // returns (bool)   {
+    //     result = address(sc).call(abi.encodeWithSignature("verifyCaller(address)"));
+    //     Assert.isFalse(result, "verifyCaller() should throw an exception...");
+    // }
 
-    function testPaidEnough() 
-    public 
-    returns (bool)   {
-        result = address(sc).call(abi.encodeWithSignature("paidEnough(uint)"));
-        Assert.isFalse(result, "paidEnough() should throw an exception...");
-    }
+    // function testPaidEnough() 
+    // public 
+    // returns (bool)   {
+    //     result = address(sc).call(abi.encodeWithSignature("paidEnough(uint)"));
+    //     Assert.isFalse(result, "paidEnough() should throw an exception...");
+    // }
 
-    function testCheckValue() 
-    public 
-    returns (bool)   {
-        result = address(sc).call(abi.encodeWithSignature("checkValue(uint)"));
-        Assert.isFalse(result, "checkValue() should throw an exception...");
-    }
+    // function testCheckValue() 
+    // public 
+    // returns (bool)   {
+    //     result = address(sc).call(abi.encodeWithSignature("checkValue(uint)"));
+    //     Assert.isFalse(result, "checkValue() should throw an exception...");
+    // }
 
-    function testForSale() 
-    public 
-    returns (bool)   {
-        result = address(sc).call(abi.encodeWithSignature("forSale(uint)"));
-        Assert.isFalse(result, "forSale() should throw an exception...");
-    }
+    // function testForSale() 
+    // public 
+    // returns (bool)   {
+    //     result = address(sc).call(abi.encodeWithSignature("forSale(uint)"));
+    //     Assert.isFalse(result, "forSale() should throw an exception...");
+    // }
 
-    function testSold() 
-    public 
-    returns (bool)   {
-        result = address(sc).call(abi.encodeWithSignature("sold(uint)"));
-        Assert.isFalse(result, "sold() should throw an exception...");
-    }
+    // function testSold() 
+    // public 
+    // returns (bool)   {
+    //     result = address(sc).call(abi.encodeWithSignature("sold(uint)"));
+    //     Assert.isFalse(result, "sold() should throw an exception...");
+    // }
 
-    function testShipped() 
-    public 
-    returns (bool)   {
-        result = address(sc).call(abi.encodeWithSignature("shipped(uint)"));
-        Assert.isFalse(result, "shipped() should throw an exception...");
-    }
+    // function testShipped() 
+    // public 
+    // returns (bool)   {
+    //     result = address(sc).call(abi.encodeWithSignature("shipped(uint)"));
+    //     Assert.isFalse(result, "shipped() should throw an exception...");
+    // }
 
-    function testReceived() 
-    public 
-    returns (bool)   {
-        result = address(sc).call(abi.encodeWithSignature("received(uint)"));
-        Assert.isFalse(result, "received() should throw an exception...");
-    }
+    // function testReceived() 
+    // public 
+    // returns (bool)   {
+    //     result = address(sc).call(abi.encodeWithSignature("received(uint)"));
+    //     Assert.isFalse(result, "received() should throw an exception...");
+    // }
 
     // buyItem
 
