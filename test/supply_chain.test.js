@@ -8,7 +8,7 @@ contract('SupplyChain', function(accounts) {
     const emptyAddress = '0x0000000000000000000000000000000000000000'
 
     var sku
-    const price = web3.toWei(1, "ether")
+    const price = 1
 
     it("should add an item with the provided name and price", async() => {
         const supplyChain = await SupplyChain.deployed()
@@ -49,7 +49,7 @@ contract('SupplyChain', function(accounts) {
             eventEmitted = true
         })
 */
-        const amount = web3.toWei(2, "ether")
+        const amount = 2
 
         var aliceBalanceBefore = await web3.eth.getBalance(alice).toNumber()
         var bobBalanceBefore = await web3.eth.getBalance(bob).toNumber()
