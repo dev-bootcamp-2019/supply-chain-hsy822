@@ -1,9 +1,3 @@
-pragma solidity ^0.4.13;
-
-import "truffle/Assert.sol";
-import "truffle/DeployedAddresses.sol";
-import "../contracts/SupplyChain.sol";
-
 contract TestSupplyChain {
 
     // SupplyChain sc = new SupplyChain();
