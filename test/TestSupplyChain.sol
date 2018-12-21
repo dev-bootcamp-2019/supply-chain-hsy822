@@ -1,3 +1,5 @@
+pragma solidity ^0.4.13;
+
 contract TestSupplyChain {
 
     // SupplyChain sc = new SupplyChain();
