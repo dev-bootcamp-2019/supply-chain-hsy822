@@ -32,8 +32,8 @@ contract SupplyChain {
         uint sku;
         uint price;
         uint state;
-        address seller;
-        address buyer;
+        address payable seller;
+        address payable buyer;
     }
 
     /* Create 4 events with the same name as each possible State (see above)
@@ -74,7 +74,7 @@ contract SupplyChain {
 
     function addItem(string memory _name, uint _price) public returns(bool){
         emit ForSale(skuCount);
-        items[skuCount] = Item({name: _name, sku: skuCount, price: _price, state: uint(State.ForSale), seller: msg.sender, buyer: 0});
+        items[skuCount] = Item({name: _name, sku: skuCount, price: _price, state: uint(State.ForSale), seller: msg.sender, buyer: address(0)});
         skuCount = skuCount + 1;
         return true;
     }
